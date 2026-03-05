@@ -50,22 +50,20 @@ const displayCard = (plants) => {
                   src="${plant.image}"
                   alt="Trees"
                 />
+                
               </figure>
               <div class="card-body">
-               <h2 class="card-title">
+               <h2 class="card-title text-gray-700">
                 ${plant.name}
-                <div class="badge text-sm bg-green-700 text-white">$${plant.price}</div>
+                <div class="badge  text-sm bg-gray-400 text-white">$${plant.price}</div>
               </h2>
                 <p>
                   ${plant.description}
                 </p>
-                <div class="card-actions justify-center">
-                  <div class="rounded-xl badge badge-outline">${plant.category}</div>
+                <div class="card-actions ">
+                  <div class="rounded-xl bg-gray-300 badge">${plant.category}</div>
                 </div>
-                <div class="flex gap-4">
-                  <div class="btn-outline rounded-xl">$$</div>
-                  <div class="btn btn-outline rounded-xl">Products</div>
-                </div>
+                <div class=" btn btn-outline  rounded-full">Cart<i class="fa-regular fa-heart "></i></div>
               </div>
             </div>`;
 
